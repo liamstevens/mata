@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Service</title>
+</head>
+<body>
+    <h1>Analytics Service</h1>
+    <p>This service receives duplicated traffic for monitoring and analysis.</p>
+    <p>Traffic captured at: <span id="timestamp"></span></p>
+    
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toISOString();
+        console.log('Analytics service received request:', window.location.href);
+    </script>
+</body>
+</html>
